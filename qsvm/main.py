@@ -6,7 +6,7 @@ import warnings
 from time import perf_counter
 
 from qiskit_algorithms.utils import algorithm_globals
-from qiskit_machine_learning.kernels import QuantumKernel
+from qiskit_machine_learning.kernels import FidelityQuantumKernel
 import numpy as np
 
 from sklearn.svm import SVC
@@ -49,7 +49,7 @@ def main(args):
         backend_name=args["backend_name"],
         **args["config"],
     )
-    kernel = QuantumKernel(feature_map=feature_map, quantum_instance=quantum_instance)
+    kernel = FidelityQuantumKernel(feature_map=feature_map, quantum_instance=quantum_instance)
     print("Calculating the quantum kernel matrix elements... ", end="")
     train_time_init = perf_counter()
     quantum_kernel_matrix = kernel.evaluate(x_vec=train_features)
