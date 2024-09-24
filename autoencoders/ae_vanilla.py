@@ -219,7 +219,7 @@ class AE_vanilla(nn.Module):
 
         returns :: Pytorch loss object of the validation loss.
         """
-        x_data_valid, y_data_valid = iter(valid_loader).next()
+        x_data_valid, y_data_valid = next(iter(valid_loader))
         x_data_valid = x_data_valid.to(self.device)
         self.eval()
 
