@@ -44,7 +44,7 @@ setup(
         "pykeops>=1.5",
         "qiskit>=0.32.0",
         "qiskit-machine-learning>=0.2.1",
-        "qiskit-ibm-provider>=0.5.4",
+        "qiskit-ibm-runtime>=0.30.0",
         "qiskit-algorithms>=0.3.0",
         "optuna>=2.10.0",
         "cmake>=3.21.4",
