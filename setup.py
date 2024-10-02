@@ -43,6 +43,7 @@ setup(
         "geomloss>=0.2.4",
         "pykeops>=1.5",
         "qiskit>=0.32.0",
+        "qiskit-aer>=0.15.1",
         "qiskit-machine-learning>=0.2.1",
         "qiskit-ibm-runtime>=0.30.0",
         "qiskit-algorithms>=0.3.0",
