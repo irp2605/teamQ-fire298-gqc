@@ -4,7 +4,7 @@ import os
 import joblib
 from typing import Tuple, Dict
 from qiskit_ibm_runtime import QiskitRuntimeService
-from qiskit import Aer
+from qiskit_aer import Aer
 from qiskit import QuantumCircuit
 from qiskit.utils import QuantumInstance
 from qiskit.providers.exceptions import QiskitBackendNotFoundError
